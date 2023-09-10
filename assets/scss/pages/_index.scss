@@ -1,0 +1,51 @@
+//font-family: 'Noto Serif TC', serif; 思源黑體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+$primary: #8b0500;
+
+
+%transition {
+  transition: all 0.6s ease;
+}
+
+.area {
+  padding: 6px 15px;
+  background: $primary;
+  color: #222;
+  //border    : 1px solid #333;
+
+  @extend %transition;
+
+  &:hover {
+    background: darken(#AA0601, 10%);
+  }
+
+  &:active {
+    background: darken($primary, 10%);
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.8em;
+}
+
+
+//門市資訊
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
